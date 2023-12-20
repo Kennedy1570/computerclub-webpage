@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+    background-color: #035D30;
+    height:60px;
+    line-height: 55px;
+    color: white;
+    font-size: 1.2em;
+}
+.container{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+.lColumn{
+    flex:2;
+    border: 2px solid silver;
+} 
+#imageContainer img{
+    max-width: 100%;
+}
+.lColData{
+    padding: 5px;
+}
+.pI{
+    color:white;
+    height: 19px;
+    background-color: black;
+    text-align: right;
+    font-style: italic;
+}
+.rColumn{
+    flex:1;
+    border:2px solid silver;
+}
+.rColData{
+    padding:5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+} 
+input, button{
+    margin-bottom: 7px;
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+footer{
+    height: 60px;
+    background-color: #035D30;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+    font-size: 0.8em;
+}
+@media screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+    }
+    
+    .lColumn, .rColumn {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+body{
+    
+}
